@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.284">
+<testcase classname="eature validate login functionality" name="enter user and password and validate login" time="6.107">
+<failure message="expected [http://shipcarte.pragralms.com:3000/#/dashboard] but found [http://shipcarte.pragralms.com:3000/#/signin]" type="java.lang.AssertionError"><![CDATA[Given shipcarte login page is launched......................................passed
+When "hatami_l66@yahoo.com" is entered......................................passed
+When password is entered....................................................passed
+And click on login button...................................................passed
+Then validate if it land on dashboard page..................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [http://shipcarte.pragralms.com:3000/#/dashboard] but found [http://shipcarte.pragralms.com:3000/#/signin]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at stepdefinition.LoginStepDefinition.validate_if_it_land_on_dashboard_page(LoginStepDefinition.java:53)
+	at ✽.validate if it land on dashboard page(file:///D:/workPlace/MyBDDPracticeNew/src/test/resources/features/shipcarte.feature:8)
+]]></failure>
+</testcase>
+</testsuite>

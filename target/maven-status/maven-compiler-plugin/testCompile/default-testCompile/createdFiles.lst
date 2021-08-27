@@ -1,0 +1,4 @@
+stepdefinition\LoginStepDefinition.class
+stepdefinition\amazonStepDefinition.class
+tests\RunnerTest.class
+pages\LoginPage.class

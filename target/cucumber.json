@@ -1,0 +1,118 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-26T13:41:02.529Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1798000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.LoginStepDefinition.cucumberSetup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "enter user and password and validate login",
+        "description": "",
+        "id": "eature-validate-login-functionality;enter-user-and-password-and-validate-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 85000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinition.LoginStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3874000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "shipcarte login page is launched",
+            "match": {
+              "location": "stepdefinition.LoginStepDefinition.shipcarte_login_page_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 100000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "\"hatami_l66@yahoo.com\" is entered",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hatami_l66@yahoo.com\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepdefinition.LoginStepDefinition.is_entered(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 120000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "password is entered",
+            "match": {
+              "location": "stepdefinition.LoginStepDefinition.password_is_entered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on login button",
+            "match": {
+              "location": "stepdefinition.LoginStepDefinition.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [http://shipcarte.pragralms.com:3000/#/dashboard] but found [http://shipcarte.pragralms.com:3000/#/signin]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:140)\r\n\tat org.testng.Assert.assertEquals(Assert.java:122)\r\n\tat org.testng.Assert.assertEquals(Assert.java:629)\r\n\tat org.testng.Assert.assertEquals(Assert.java:639)\r\n\tat stepdefinition.LoginStepDefinition.validate_if_it_land_on_dashboard_page(LoginStepDefinition.java:53)\r\n\tat ✽.validate if it land on dashboard page(file:///D:/workPlace/MyBDDPracticeNew/src/test/resources/features/shipcarte.feature:8)\r\n",
+              "duration": 10000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "validate if it land on dashboard page",
+            "match": {
+              "location": "stepdefinition.LoginStepDefinition.validate_if_it_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanityFlow"
+          }
+        ]
+      }
+    ],
+    "name": "eature validate login functionality",
+    "description": "",
+    "id": "eature-validate-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/shipcarte.feature",
+    "tags": []
+  }
+]
